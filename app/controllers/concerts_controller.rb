@@ -8,6 +8,7 @@ class ConcertsController < ApplicationController
 
   # GET /concerts/1 or /concerts/1.json
   def show
+    @group= Group.all
   end
 
   # GET /concerts/new
@@ -18,6 +19,7 @@ class ConcertsController < ApplicationController
 
   # GET /concerts/1/edit
   def edit
+    @groups = Group.all
   end
 
   # POST /concerts or /concerts.json
